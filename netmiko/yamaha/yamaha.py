@@ -92,7 +92,4 @@ class YamahaSSH(YamahaBase):
 class YamahaTelnet(YamahaBase):
     """Yamaha Telnet driver."""
 
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
-        default_enter = kwargs.get("default_enter")
-        kwargs["default_enter"] = "\n" if default_enter is None else default_enter
-        super().__init__(*args, **kwargs)
+    pass
